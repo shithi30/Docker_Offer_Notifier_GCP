@@ -1,0 +1,15 @@
+name: Run Dockerized Application
+
+on:
+  workflow_dispatch:
+
+jobs:
+  run-docker:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Pull Docker image
+      run: docker pull your_dockerhub_username/your_image:latest
+
+    - name: Run Docker container
+      run: docker run -e SAMPLE_PASSWORD=${{ secrets.SAMPLE_PASSWORD }} shithi30/myapp:latest
