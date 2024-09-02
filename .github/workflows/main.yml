@@ -9,7 +9,7 @@ jobs:
 
     steps:
     - name: Pull Docker image
-      run: docker pull your_dockerhub_username/your_image:latest
+      run: docker pull shithi30/myapp:latest
 
     - name: Run Docker container
       run: docker run -e SAMPLE_PASSWORD=${{ secrets.SAMPLE_PASSWORD }} shithi30/myapp:latest
