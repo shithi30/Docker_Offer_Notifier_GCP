@@ -16,4 +16,6 @@ docker pull shithi30/bannerapp:latest
   <img width="780" alt="c5" src="https://github.com/user-attachments/assets/dd19e16d-2a5f-4fb1-905e-640625d67130"><br>
 </p>
 
-<strong>Note</strong>: All scraping activities have been performed in compliance with robots.txt regulations.
+<p align="center">
+  <strong>Note</strong>: All scraping activities have been performed in compliance with robots.txt regulations.
+</p>
