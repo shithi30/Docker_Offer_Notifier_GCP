@@ -9,7 +9,7 @@ jobs:
 
     steps:
     - name: Pull Docker image
-      run: docker pull shithi30/myapp:latest
+      run: docker pull shithi30/bannerapp:latest
 
     - name: Run Docker container
-      run: docker run -e SAMPLE_PASSWORD=${{ secrets.SAMPLE_PASSWORD }} shithi30/myapp:latest
+      run: docker run -e EMAIL_PASS=${{ secrets.EMAIL_PASS }} -e GCP_BLOB_KEY_JSON=${{ secrets.GCP_BLOB_KEY_JSON }} shithi30/bannerapp:latest
