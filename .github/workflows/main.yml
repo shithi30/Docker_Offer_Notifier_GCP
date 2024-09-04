@@ -2,14 +2,21 @@ name: Run Dockerized Application
 
 on:
   workflow_dispatch:
+    # Or you can trigger on push or pull_request as per your requirement
 
 jobs:
   run-docker:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Check out the repo
+      uses: actions/checkout@v2
+
     - name: Pull Docker image
       run: docker pull shithi30/bannerapp:latest
 
-    - name: Run Docker container
-      run: docker run -e EMAIL_PASS=${{ secrets.EMAIL_PASS }} -e GCP_BLOB_KEY_JSON=${{ secrets.GCP_BLOB_KEY_JSON }} shithi30/bannerapp:latest
+    - name: Run Docker container with secrets as environment variables
+      run: |
+        docker run -e EMAIL_PASS=${{ secrets.EMAIL_PASS }} \
+                   -e GCP_BLOB_KEY_JSON=${{ secrets.GCP_BLOB_KEY_JSON }} \
+                   shithi30/bannerapp:latest
