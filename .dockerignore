@@ -1,3 +1,4 @@
 .env
 .github/
 README.md
+blob_storage_gcp_key.json
