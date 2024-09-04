@@ -1,3 +1,6 @@
+This repository keeps me informed about the latest offers at grocery stores near my home.<br>
+Tech Stack: ```Python - Selenium, bs4``` ```GCP Blob Storage``` ```Docker``` ```GitHub Actions```
+
 ### Image on Docker Hub
 ```bash
 docker pull shithi30/bannerapp:latest
@@ -12,3 +15,5 @@ docker pull shithi30/bannerapp:latest
 <p align="center">
   <img width="780" alt="c5" src="https://github.com/user-attachments/assets/dd19e16d-2a5f-4fb1-905e-640625d67130"><br>
 </p>
+
+<strong>Note</strong>: All scraping activities have been performed in compliance with robots.txt regulations.
