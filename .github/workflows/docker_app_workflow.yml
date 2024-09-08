@@ -3,8 +3,7 @@ name: Run Dockerized Banner App
 on:
   workflow_dispatch:
   schedule:
-    #- cron: "0 14 * * 2,6"
-    - cron: "0 * * * *"
+    - cron: "0 14 * * 2,6"
 
 jobs:
   run-docker:
